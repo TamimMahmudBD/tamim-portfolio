@@ -7,7 +7,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 
 
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -35,7 +34,7 @@ const Navbar = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
   return (
     <div id='nav' style={{ backgroundColor: `${navBg}` }}
       className={
@@ -45,27 +44,27 @@ const Navbar = () => {
       }>
       <div className='flex justify-between items-center w-full h-full px-2 md:px-16 mt-0'>
         <div>
-          <Image href='/' src='/assets/logo.png' alt='/' width='130' className=' h-[20px] w-[100px] cursor-pointer' height='20' />
+          <h3>TAMIM</h3>
         </div>
         <div style={{ color: `${linkColor}` }} className='hidden md:flex'>
-          <Link href='/' > <li className='ml-10 text-sm uppercase hover:border-b '>Home</li></Link>
-          <Link href='/#about' > <li className='ml-10 text-sm uppercase hover:border-b '>About</li></Link>
-          <Link href='/#skills'> <li className='ml-10 text-sm uppercase hover:border-b '>Skills</li></Link>
-          <Link href='/#projects'> <li className='ml-10 text-sm uppercase hover:border-b '>Project</li></Link>
-          <Link href='/#contact'> <li className='ml-10 text-sm uppercase hover:border-b '>Contact</li></Link>
+          <Link href='/' > <li className='ml-10 text-sm uppercase  '>Home</li></Link>
+          <Link href="/About" > <li className='ml-10 text-sm uppercase  '>About</li></Link>
+          <Link href='/Skills'> <li className='ml-10 text-sm uppercase  '>Skills</li></Link>
+          <Link href='/Projects'> <li className='ml-10 text-sm uppercase  '>Project</li></Link>
+          <Link href='/Contact'> <li className='ml-10 text-sm uppercase  '>Contact</li></Link>
         </div>
-        <div  onClick={handleNav} className='md:hidden rounded-full shadow-xl shadow-gray p-3 cursor-pointer'>
+        <div onClick={handleNav} className='md:hidden rounded-full shadow-xl shadow-gray p-3 cursor-pointer'>
           <AiOutlineMenu />
         </div>
       </div>
- {/* Mobile Menu */}
+      {/* Mobile Menu */}
 
       <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ' : ''}>
         <div className={nav ? 'md:hidden px-4 fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] ease-in duration-500' : 'px-4 fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] ease-in duration-500'}>
           <div className=''>
             <div className=' pt-3 flex w-full items-center justify-between'>
               <div>
-                <Image src='/assets/logo.png' alt='/' width='100' className='h-[20px] w-[100px]' height='20' />
+                <h3>TAMIM</h3>
                 <p className=' text-sm'>Let's buld your dream</p>
               </div>
               <div style={{ color: `${linkColor}` }} onClick={handleNav} className='rounded-full shadow-xl shadow-gray p-3 cursor-pointer'>
@@ -76,11 +75,11 @@ const Navbar = () => {
           </div>
           <div className='py-4'>
             <ul className='capitalize'>
-              <Link  href='/'><li  onClick={() => setNav(false)} className='py-4 text-sm'>Home</li></Link>
-              <Link href='/#about'><li  onClick={() => setNav(false)} className='py-4 text-sm'>About</li></Link>
-              <Link href='/#skills'><li  onClick={() => setNav(false)} className='py-4 text-sm'>Skills</li></Link>
-              <Link href='/#projects'><li  onClick={() => setNav(false)} className='py-4 text-sm'>Project</li></Link>
-              <Link href='/#contact'><li  onClick={() => setNav(false)} className='py-4 text-sm'>Contact</li></Link>
+              <Link href='/'><li onClick={() => setNav(false)} className='py-4 text-sm'>Home</li></Link>
+              <Link href='/About'><li onClick={() => setNav(false)} className='py-4 text-sm'>About</li></Link>
+              <Link href='/Skills'><li onClick={() => setNav(false)} className='py-4 text-sm'>Skills</li></Link>
+              <Link href='/Projects'><li onClick={() => setNav(false)} className='py-4 text-sm'>Project</li></Link>
+              <Link href='/Contact'><li onClick={() => setNav(false)} className='py-4 text-sm'>Contact</li></Link>
             </ul>
             <div className='pt-10 uppercase tracking-widest text-[#0f0f0ffa]'>
               <p>Let's Connect</p>
