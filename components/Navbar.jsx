@@ -6,6 +6,8 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
 
+
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -27,8 +29,13 @@ const Navbar = () => {
     window.addEventListener('scroll', handleShadow);
   }, []);
 
-
-
+  const smoothScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   return (
     <div style={{ backgroundColor: `${navBg}` }}
       className={
@@ -43,9 +50,9 @@ const Navbar = () => {
         <div style={{ color: `${linkColor}` }} className='hidden md:flex'>
           <Link href='/'> <li className='ml-10 text-sm uppercase hover:border-b '>Home</li></Link>
           <Link href='/#about'> <li className='ml-10 text-sm uppercase hover:border-b '>About</li></Link>
-          <Link href='/#skills'> <li className='ml-10 text-sm uppercase hover:border-b '>Skills</li></Link>
-          <Link href='/#projects'> <li className='ml-10 text-sm uppercase hover:border-b '>Project</li></Link>
-          <Link href='/#contact'> <li className='ml-10 text-sm uppercase hover:border-b '>Contact</li></Link>
+          <Link href='/'> <li className='ml-10 text-sm uppercase hover:border-b '>Skills</li></Link>
+          <Link href='/'> <li className='ml-10 text-sm uppercase hover:border-b '>Project</li></Link>
+          <Link href='/'> <li className='ml-10 text-sm uppercase hover:border-b '>Contact</li></Link>
         </div>
         <div  onClick={handleNav} className='md:hidden rounded-full shadow-xl shadow-gray p-3 cursor-pointer'>
           <AiOutlineMenu />
