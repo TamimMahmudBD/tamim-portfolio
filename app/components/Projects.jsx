@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import portfolio from '../public/assets/projects/portfolio.png';
-import datastore from '../public/assets/projects/datastore.png'
-import catering from '../public/assets/projects/catering.png'
-import cloud from '../public/assets/projects/cloud.png'
+import portfolio from '../../public/assets/projects/portfolio.png';
+import datastore from '../../public/assets/projects/datastore.png'
+import catering from '../../public/assets/projects/catering.png'
+import cloud from '../../public/assets/projects/cloud.png'
 import ProjectItem from './ProjectItem';
 const Projects = () => {
   return (
