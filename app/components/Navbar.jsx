@@ -39,12 +39,12 @@ const Navbar = () => {
     <div id='nav' style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed w-full mt-0 h-16 shadow-xl z-[100] ease-in-out duration-300 '
-          : 'fixed w-full h-16 z-[100]'
+          ? 'fixed w-full mt-0 h-16 shadow-xl z-[100] ease-in-out duration-300 md:mt-[-100px] lg:mt-[0]'
+          : 'fixed w-full h-16 z-[100] md:mt-[-100px] lg:mt-[0]'
       }>
-      <div className='flex justify-between items-center w-full h-full px-2 md:px-16 mt-0'>
+      <div className='flex justify-between items-center w-full h-full px-4 md:px-16 mt-0 '>
         <div>
-          <h3>TAMIM</h3>
+          <Link href='/'><h3>TAMIM</h3></Link>
         </div>
         <div style={{ color: `${linkColor}` }} className='hidden md:flex'>
           <Link href='/' > <li className='ml-10 text-sm uppercase  '>Home</li></Link>
@@ -63,8 +63,8 @@ const Navbar = () => {
         <div className={nav ? 'md:hidden px-4 fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] ease-in duration-500' : 'px-4 fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] ease-in duration-500'}>
           <div className=''>
             <div className=' pt-3 flex w-full items-center justify-between'>
-              <div>
-                <h3>TAMIM</h3>
+              <div onClick={() => setNav(false)}>
+              <Link href='/'><h3 >TAMIM</h3></Link>
                 <p className=' text-sm'>Let's buld your dream</p>
               </div>
               <div style={{ color: `${linkColor}` }} onClick={handleNav} className='rounded-full shadow-xl shadow-gray p-3 cursor-pointer'>
