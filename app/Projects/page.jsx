@@ -19,7 +19,7 @@ const Projects = () => {
       <Pagenav/>
 
       <div id='projects' className='w-full'>
-        <div className='max-w-[1240px] mx-auto px-4 py-28 md:px-16 lg:px-14 xl:px-0'>
+        <div className='max-w-[1240px] mx-auto px-4 py-28 md:px-16 lg:px-14 xl:px-2'>
           <p className='text-xl tracking-widest uppercase text-[#1488A1]'>
             Projects
           </p>

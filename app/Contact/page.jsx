@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Whatsapp from '../Whatsapp/Whatsapp';
 // import React, { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -10,9 +11,9 @@ import Pagenav from '../Pagenav/page';
 const Contact = () => {
     return (
         <div>
-            <Pagenav/>
+            <Pagenav />
             <div id='contact' className='w-full '>
-                <div className='max-w-[1240px] m-auto px-2 py-28 w-full md:px-16 lg:px-14 xl:px-0'>
+                <div className='max-w-[1240px] m-auto px-2 py-28 w-full md:px-16 lg:px-14 xl:px-2'>
                     <p className='text-xl tracking-widest uppercase text-[#1488A1]'>
                         Contact
                     </p>
@@ -59,13 +60,9 @@ const Contact = () => {
                                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                                             <AiOutlineMail />
                                         </div>
-                                        <Link href='/resume'>
-
-                                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                                <BsFillPersonLinesFill />
-                                            </div>
-
-                                        </Link>
+                                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                            <Whatsapp />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

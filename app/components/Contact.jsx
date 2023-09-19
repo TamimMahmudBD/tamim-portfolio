@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Whatsapp from '../Whatsapp/Whatsapp';
 // import React, { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -57,13 +58,9 @@ const Contact = () => {
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                                         <AiOutlineMail />
                                     </div>
-                                    <Link href='/resume'>
-                                        
-                                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                                <BsFillPersonLinesFill />
-                                            </div>
-                                      
-                                    </Link>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <Whatsapp />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -130,12 +127,12 @@ const Contact = () => {
                 </div>
                 <div className='flex justify-center py-12'>
                     <Link href='/'>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <HiOutlineChevronDoubleUp
-                                    className='text-[#1488A1]'
-                                    size={30}
-                                />
-                            </div>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <HiOutlineChevronDoubleUp
+                                className='text-[#1488A1]'
+                                size={30}
+                            />
+                        </div>
                     </Link>
                 </div>
             </div>

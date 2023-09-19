@@ -2,8 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { BsFillPersonLinesFill} from 'react-icons/bs';
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import Whatsapp from '../Whatsapp/Whatsapp';
 
 const Main = () => {
   return (
@@ -47,11 +48,9 @@ const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href='/resume'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <BsFillPersonLinesFill />
+              <Whatsapp />
               </div>
-            </Link>
           </div>
         </div>
       </div>
