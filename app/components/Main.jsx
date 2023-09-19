@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 const Main = () => {
   return (
     <div id='home' className='w-full md:h-[100vh] text-center md:text-left flex flex-col md:flex-row md:px-14 md:my-24 lg:my-0 lg:pt-8'>
-      <div className='max-w-[1240px]  w-full md:w-3/5 h-full mx-auto p-4 flex justify-center items-center my-24 md:my-0'>
+      <div className='max-w-[1240px]  w-full md:w-3/5 h-full mx-auto p-4 lg:p-2 flex justify-center items-center my-24 md:my-0'>
         <div className='pt-6 md:pt-0'>
           <p className='uppercase text-sm tracking-widest text-gray-600'>
             LET&#39;S BUILD SOMETHING TOGETHER
