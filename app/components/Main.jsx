@@ -56,7 +56,7 @@ const Main = () => {
       </div>
       <div class="w-full md:w-2/5 p-4 flex flex-wrap items-center justify-center">
         <div class="flex flex-wrap items-center justify-center">
-          <Image src="/assets/tamim-img.png" height='420' width='420' alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-2 border-[#1488A1]" />
+          <Image src="/assets/tamim-img-one.jpg" height='420' width='420' alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-2 border-[#1488A1]" />
         </div>
       </div>
     </div>
